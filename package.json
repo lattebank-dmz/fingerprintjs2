@@ -21,16 +21,15 @@
   "homepage": "https://github.com/Valve/fingerprintjs2",
   "main": "dist/fingerprint2.min.js",
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-util": "^3.0.8",
-    "gulp-header-license": "^1.0.9",
-    "gulp-rename": "^1.4.0",
-    "gulp-uglify": "^3.0.1",
-    "standard": "^10.0.3"
+    "gulp": "4.0.0",
+    "gulp-rev": "7.1.2",
+    "gulp-uglify": "3.0.1",
+    "gulp-util": "3.0.8",
+    "standard": "10.0.3"
   },
   "scripts": {
     "test": "specs/phantomjs.runner.sh specs/spec_runner.html",
-    "gulp": "gulp",
+    "build": "gulp minify",
     "lint": "standard --fix"
   },
   "standard": {
